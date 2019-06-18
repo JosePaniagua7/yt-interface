@@ -1,7 +1,9 @@
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 import Navbar from './Components/Navbar';
 import VideoContainer from './Components/VideoContainer';
+import BottomNavbar from './Components/BottomNavbar';
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -12,24 +14,28 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
   //<Navbar style={styles.navbar}/>  
+  //<VideoContainer id={1}/>   
   render() {
     return (
       <View style={styles.container}>
-        <VideoContainer id={1}/>    
+        <Navbar style={styles.navbar} />
+        <VideoContainer id={1}/>   
+        <VideoContainer id={1}/>           
+        <BottomNavbar />
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container:{
+  container: {
     flex: 1,
-    flexDirection:'row',    
-    justifyContent: 'center',    
+    flexDirection: 'column',
+    justifyContent: 'center',
     alignItems: 'center',
   },
-  navbar:{
-    width:'100%'
+  navbar: {
+    width: '100%'
   }
 })
 /*const styles = StyleSheet.create({

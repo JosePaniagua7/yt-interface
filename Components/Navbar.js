@@ -14,7 +14,7 @@ export class Navbar extends Component {
                 </View>
                 <View style={[styles.container, styles.navChild, styles.icons]}>
                     <Icon
-                        name='airplay'
+                        name='cast'
                         color='#ffffff' />
                     <Icon
                         name='videocam'
