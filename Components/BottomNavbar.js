@@ -44,13 +44,13 @@ export default class BottomNavbar extends Component {
 const styles = StyleSheet.create({
     generalContainer: {
         width: '100%',
-        height: '8%',
+        height: '100%',
         backgroundColor: '#333333',
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        borderTopColor: 'white',
+        borderTopColor: '#747577',
         borderTopWidth: 2,
     },
     iconContainer: {

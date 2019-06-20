@@ -34,7 +34,7 @@ export class Navbar extends Component {
 const styles = StyleSheet.create({
     generalContainer: {        
         width: '100%',
-        height: '10%',
+        height: '100%',
     },
     container: {
         backgroundColor: 'black',

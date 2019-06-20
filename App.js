@@ -3,6 +3,7 @@ import { Platform, StyleSheet, Text, View } from 'react-native';
 import Navbar from './Components/Navbar';
 import VideoContainer from './Components/VideoContainer';
 import BottomNavbar from './Components/BottomNavbar';
+import LandingView from './Components/LandingView';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -18,10 +19,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Navbar style={styles.navbar} />
-        <VideoContainer id={1}/>   
-        <VideoContainer id={1}/>           
-        <BottomNavbar />
+        <LandingView style={styles.landingView} />
       </View>
     );
   }
@@ -33,10 +31,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  navbar: {
-    width: '100%'
-  }
+    backgroundColor:'black'
+  }  
 })
 /*const styles = StyleSheet.create({
   container: {
